@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "5c4a5a5a-2667-4519-923d-2fc1be9ac366",
+		"name": "EmployeeAPI_Assessment",
+		"description": "RESTful API collection for managing employees using Spring Boot.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49734752",
+		"_collection_link": "https://mvpreddy05-6152223.postman.co/workspace/mvpreddy's-Workspace~a5748a26-5393-481a-8e15-b188b3e57b35/collection/49734752-5c4a5a5a-2667-4519-923d-2fc1be9ac366?action=share&source=collection_link&creator=49734752"
+	},
+	"item": [
+		{
+			"name": "Create Employee (Name & Email)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"name\",\n    \"email\": \"name@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/create/basic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"create",
+						"basic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Employee (Name, Email, Phone)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"name\",\n    \"email\": \"name@gmail.com\",\n    \"phone\": \"9876543210\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/create/full",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"create",
+						"full"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Employee by Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/email/name@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"email",
+						"name@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Employee by Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/name/name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"name",
+						"name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee (Last Name, Phone, Address)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"name@gmail.com\",\n    \"lastName\": \"reddy\",\n    \"phone\": \"9999999999\",\n    \"address\": \"Hyderabad\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee Phone Only",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"name@gmail.com\",\n    \"phone\": \"8888888888\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/update/phone",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"update",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee by Email",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/delete/name@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"delete",
+						"name@gmail.com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
