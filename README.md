@@ -25,16 +25,15 @@ http://localhost:8080
 
 ## Employee Schema
 
-----------------------------------------
-Field       | Type    | Description
-----------------------------------------
-id          | Long    | Auto-generated unique ID
-firstName   | String  | Employee’s first name
-lastName    | String  | Employee’s last name
-email       | String  | Unique employee email
-phone       | String  | Employee’s phone number
-address     | String  | Employee’s address
-----------------------------------------
+| Field      | Type   | Description                |
+|-------------|--------|----------------------------|
+| id          | Long   | Auto-generated unique ID   |
+| firstName   | String | Employee’s first name      |
+| lastName    | String | Employee’s last name       |
+| email       | String | Unique employee email      |
+| phone       | String | Employee’s phone number    |
+| address     | String | Employee’s address         |
+
 
 
 ---
